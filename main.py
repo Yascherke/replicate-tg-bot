@@ -12,12 +12,12 @@ from stt import speach_to_text
 
 logging.basicConfig(level=logging.INFO)
 
-API_TOKEN = "5732112995:AAF2jUYLHD1bjQz9nNqLgnPTG2dhp0fLyl0"
+API_TOKEN = "yourTelegramBotToken
 bot = Bot(token=API_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 
-os.environ["REPLICATE_API_TOKEN"] = "ca9b4ba5a16a763131558d84d478a17fa3a936a1"
+os.environ["REPLICATE_API_TOKEN"] = "yourReplicateApiToken"
 
 
 @dp.message_handler(commands=['start'])
